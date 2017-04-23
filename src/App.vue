@@ -5,7 +5,9 @@
       这是一个webpack+vue项目 请clone到本地继续写
     </p>
     <p>
+      <!--
       下载源代码<a href="https://github.com/dongqs/xiaokui">https://github.com/dongqs/xiaokui</a>
+      -->
     </p>
     <ul>
       <li>0.如认为题目过于简单可不做 直接联系我们</li>
