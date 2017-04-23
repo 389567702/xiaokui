@@ -3,7 +3,7 @@
     <h2>热电厂二期项目</h2>
     <input placeholder="搜索过滤建筑物名称">
     <div v-for="building in buildings">
-      <h3>{{ building.name }}</h3>
+      <h3>{{ building.name }}</h3>s
       <ul>
         <li>计划开始: {{ building.start_date }}</li>
         <li>计划完成: {{ building.end_date }}</li>
