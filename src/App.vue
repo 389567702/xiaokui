@@ -5,10 +5,9 @@
       这是一个webpack+vue项目 请clone到本地继续写
     </p>
     <p>
-      <!--
       下载源代码<a href="https://github.com/dongqs/xiaokui">https://github.com/dongqs/xiaokui</a>
-      -->
     </p>
+ <!--
     <ul>
       <li>0.如认为题目过于简单可不做 直接联系我们</li>
       <li>1.请每隔10分钟git-commit一次 这很重要</li>
@@ -19,6 +18,7 @@
       <li>6.完成后放到github或类似平台上</li>
       <li>7.加分项 写测试</li>
     </ul>
+-->
     <p>
       公司地址: 北京市海淀区苏州街长远天地大厦
       联系人: 刘先生 15010085446
