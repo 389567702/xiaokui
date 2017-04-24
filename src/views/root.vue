@@ -1,7 +1,9 @@
 <template>
   <div>
     <h2>热电厂二期项目</h2>
-    <input placeholder="搜索过滤建筑物名称">
+    <div class="form-group">
+    <input class="form-control" placeholder="搜索过滤建筑物名称">
+    </div>
     <div v-for="building in buildings">
       <h3>{{ building.name }}</h3>s
       <ul>
