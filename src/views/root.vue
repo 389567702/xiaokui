@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="container">
     <h2>热电厂二期项目</h2>
     <div class="form-group">
-    <input class="form-control" placeholder="搜索过滤建筑物名称">
+      <input class="form-control gray" placeholder="搜索过滤建筑物名称">
     </div>
     <div v-for="building in buildings">
-      <h3>{{ building.name }}</h3>s
-      <ul>
+      <h3>{{ building.name }}</h3>
+      <ul class="gray">
         <li>计划开始: {{ building.start_date }}</li>
         <li>计划完成: {{ building.end_date }}</li>
         <li>计划工期: {{ building.total_duration }}</li>

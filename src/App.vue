@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+<!--
     <h1>北京小葵公司前端工程师招聘题目说明</h1>
     <p>
       这是一个webpack+vue项目 请clone到本地继续写
@@ -29,6 +30,7 @@
     <hr>
     <h3>请在下面这个半成品的基础上继续</h3>
     <hr>
+-->
 
     <template v-if="db">
       <router-view :db="db"></router-view>
