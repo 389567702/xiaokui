@@ -31,10 +31,9 @@ h3,h4{
 .table .progress-bar{
   background-color: #5EB6F5;
 }
-.btn_container p,.btn_container span{
+.btn_container p,.btn_container a{
   width:100%;
   text-align: center;
 }
 .part_container{
-  display: none;
 }

@@ -46,11 +46,11 @@
          </tr>
       </table>
 
-<hr/>
-<div class="btn_container">
-  <p>显示分部工程进度</p>
-  <span class="glyphicon glyphicon-menu-down"></span>
-</div>
+      <hr/>
+      <div class="btn_container">
+        <p>显示分部工程进度</p>
+        <a v-on="click: onClick"  class="glyphicon glyphicon-menu-down">触发一个方法函数</a>
+      </div>
 
       <div class="part_container">
         <h4>分布工程</h4>
@@ -144,6 +144,11 @@ export default {
     return {
       buildings: buildings
     }
-  }
+  },
+  methods: {
+      onClick: function (e) {
+
+      }
+    }
 }
 </script>
