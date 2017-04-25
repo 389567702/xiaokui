@@ -4,6 +4,93 @@
     <div class="form-group">
       <input class="form-control gray" placeholder="搜索过滤建筑物名称">
     </div>
+
+    <div class="content-container" v-for="building in buildings">
+      <h3>{{ building.name }}</h3>
+      <table class="table">
+        <tr>
+          <th>计划开始: </th>
+          <th>计划完成: </th>
+          <th>计划工期: </th>
+          <th>已经施工: </th>
+        </tr>
+        <tr>
+          <td>{{ building.start_date }}</td>
+          <td>{{ building.end_date }}</td>
+          <td>{{ building.total_duration }}天</td>
+          <td>{{ building.total_elapsed }}天</td>
+        </tr>
+        <tr>
+          <th colspan="2">实际进度</th>
+          <td colspan=2 class="td_blue">{{ building.real_progress * 100 }}%</td>
+        </tr>
+        <tr>
+          <td colspan=4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" v-bind:aria-valuenow="building.real_progress * 100" aria-valuemin="0" aria-valuemax="100" v-bind:style="{width: building.real_progress * 100 + '%'}">
+              </div>
+            </div>
+          </td>
+         </tr>
+         <tr>
+          <th colspan="2">计划进度</th>
+          <td colspan=2 class="td_blue">{{ building.plan_progress * 100 }}%</td>
+         </tr>
+         <tr>
+          <td colspan=4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" v-bind:aria-valuenow="building.plan_progress * 100" aria-valuemin="0" aria-valuemax="100" v-bind:style="{width: building.plan_progress * 100 + '%'}">
+                  </div>
+                </div>
+          </td>
+         </tr>
+      </table>
+
+      <h4>分布工程</h4>
+      <div v-for="part in building.parts">
+        <table class="table">
+          <tr>
+            <th>计划开始: </th>
+            <th>计划完成: </th>
+            <th>计划工期: </th>
+            <th>已经施工: </th>
+          </tr>
+          <tr>
+            <td>{{ part.start_date }}</td>
+            <td>{{ part.end_date }}</td>
+            <td>{{ part.total_duration }}天</td>
+            <td>{{ part.total_elapsed }}天</td>
+          </tr>
+          <tr>
+            <th colspan="2">实际进度</th>
+            <td colspan=2 class="td_blue">{{ part.real_progress * 100 }}%</td>
+          </tr>
+          <tr>
+            <td colspan=4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" v-bind:aria-valuenow="part.real_progress * 100" aria-valuemin="0" aria-valuemax="100" v-bind:style="{width: part.real_progress * 100 + '%'}">
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">计划进度</th>
+            <td colspan=2 class="td_blue">{{ part.plan_progress * 100 }}%</td>
+          </tr>
+          <tr>
+            <td colspan=4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" v-bind:aria-valuenow="part.plan_progress * 100" aria-valuemin="0" aria-valuemax="100" v-bind:style="{width: part.plan_progress * 100 + '%'}">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+    </div>
+
+<!--
     <div v-for="building in buildings">
       <h3>{{ building.name }}</h3>
       <ul class="gray">
@@ -34,6 +121,9 @@
       </ul>
       <hr>
     </div>
+-->
+
+
   </div>
 </template>
 
